@@ -20,7 +20,7 @@ La grille tarifaire se trouve dans `index.html`, dans la section identifiée par
 
 - Téléphone : 07 50 78 57 72
 - Adresse : 10 rue de Rambouillet, 75012 Paris
-- Horaires : 7j/7, 10h30–22h00
+- Horaires : 7j/7, 10h30–2h00 du matin (fermeture le lendemain).
 
 ## Images
 

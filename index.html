@@ -104,6 +104,24 @@
       <div class="photo photo-wide"><img src="assets/fenfang-03.jpg" alt="Espace d’accueil du salon FenFang" width="1600" height="1200" loading="lazy"></div>
     </section>
 
+    <section class="salon-film section" id="video" aria-labelledby="film-title">
+      <div class="film-heading">
+        <div><p class="eyebrow">Un aperçu de notre univers</p><h2 id="film-title">Entrez dans<br><em>la parenthèse FenFang.</em></h2></div>
+        <p>Avant votre visite, découvrez le salon en images. Quelques instants pour vous imprégner de son atmosphère.</p>
+      </div>
+      <figure class="film-frame">
+        <div class="film-screen">
+          <video id="salon-video" controls playsinline preload="none" poster="assets/fenfang-video-poster.jpg" width="960" height="544" aria-label="Présentation du salon FenFang – Belles d’Asie" aria-describedby="film-caption">
+            <source src="assets/fenfang-salon.mp4" type="video/mp4">
+            Votre navigateur ne permet pas la lecture de cette vidéo. <a href="assets/fenfang-salon.mp4">Télécharger la vidéo</a>.
+          </video>
+          <button class="film-play" type="button" aria-label="Lire la vidéo du salon" hidden><span class="film-play-icon" aria-hidden="true">▶</span><span>Découvrir le salon<small>Le film · 28 secondes</small></span></button>
+        </div>
+        <figcaption id="film-caption"><span>FenFang — Belles d’Asie</span><span>10 rue de Rambouillet · Paris 12</span></figcaption>
+      </figure>
+      <p class="film-error" role="status" hidden>La vidéo ne peut pas être lue. <a href="assets/fenfang-salon.mp4">Ouvrir le fichier vidéo</a>.</p>
+    </section>
+
     <section class="services section" id="massages">
       <div class="section-heading">
         <div><p class="section-kicker">Nos massages</p><h2>Choisissez votre moment</h2></div>

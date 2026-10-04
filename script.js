@@ -17,3 +17,27 @@ nav?.querySelectorAll('a').forEach((link) => {
 });
 
 document.querySelector('#year').textContent = new Date().getFullYear();
+
+const salonVideo = document.querySelector('#salon-video');
+const filmPlay = document.querySelector('.film-play');
+const filmError = document.querySelector('.film-error');
+if (salonVideo && filmPlay) {
+  filmPlay.hidden = false;
+  filmPlay.addEventListener('click', async () => {
+    filmPlay.hidden = true;
+    salonVideo.focus();
+    try {
+      await salonVideo.play();
+    } catch {
+      filmError.hidden = false;
+    }
+  });
+  salonVideo.addEventListener('play', () => {
+    filmPlay.hidden = true;
+    filmError.hidden = true;
+  });
+  salonVideo.addEventListener('error', () => {
+    filmPlay.hidden = true;
+    filmError.hidden = false;
+  });
+}

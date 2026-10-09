@@ -19,3 +19,5 @@ body{padding-bottom:68px}.site-header{min-height:82px;padding-top:14px;padding-b
 }
 @media(max-width:440px){.service-grid{grid-template-columns:1fr}.service-card{min-height:0;padding:26px}.hero>img{height:300px}.hero-actions{flex-direction:column}.photo-tall,.photo-wide{height:225px}.price-list>div{grid-template-columns:minmax(0,1fr) 56px 62px;gap:8px;font-size:14px}.map-heading{padding:20px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+.hero>img.hero-photo-rose{object-position:center center}
+@media(max-width:760px){.hero>img.hero-photo-rose{object-position:center 30%}}
